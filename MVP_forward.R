@@ -122,7 +122,19 @@ for (out_name in names(outcomes_cfg)) {
 
   # Plots
   save_mr_plots(mr_obj, dat_strong, save_dir = out_dir)
-
+  # ── Save plot-related RDS explicitly ──────────────────────────────────────
+  saveRDS(dat_strong,
+          file.path(out_dir, "rds", "05_harmonised_strongF.rds"))
+  if (!is.null(mr_obj$raw))
+    saveRDS(mr_obj$raw,
+            file.path(out_dir, "rds", "06_mr_results_raw.rds"))
+  if (!is.null(mr_obj$ss))
+    saveRDS(mr_obj$ss,
+            file.path(out_dir, "rds", "10_singlesnp.rds"))
+  if (!is.null(mr_obj$loo))
+    saveRDS(mr_obj$loo,
+            file.path(out_dir, "rds", "09_leaveoneout.rds"))
+  
   # Attrition
   make_attrition(
     n_preclump      = n_preclump,
