@@ -28,7 +28,7 @@ HF-MVP-MR/
 └── session_info.txt              # R session and package version information
 ```
 
-> **Note:** Raw data files are not included in this repository. Access to the source GWAS summary statistics requires appropriate data access agreements.
+> **Note:** Raw data files are not included in this repository. GWAS summary statistics used in this study are publicly available. Sources and download links will be added upon preprint submission.
 
 ---
 
