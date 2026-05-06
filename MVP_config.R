@@ -45,7 +45,7 @@ outcomes_cfg <- list(
 
   # ── HFpEF (Diastolic HF) ──
   # GCST90477963
-  # N_cases = 5,379 | N_controls = 113,041 | N_eff = ~20,381
+  # N_cases = 5,379 | N_controls = 113,041 | N_eff = 20,539
   MVP_HFpEF_AFR = list(
     file     = file.path(project_root, "data_raw",
                "GCST90477963.tsv.gz"),  # update filename
@@ -77,7 +77,7 @@ outcomes_cfg <- list(
 
   # ── HFrEF (Systolic HF) ──
   # GCST90477961
-  # N_cases = 9,104 | N_controls = 109,632 | N_eff = ~32,604
+  # N_cases = 9,104 | N_controls = 109,632 | N_eff = 33,624
   MVP_HFrEF_AFR = list(
     file     = file.path(project_root, "data_raw",
                "GCST90477961.tsv.gz"),  # update filename
